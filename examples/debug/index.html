@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <script type="text/x-template" id="modal-template">
+      <div>{{ccc}}</div>
+    </script>
     <!-- app -->
-    <div id="app">
-      <div>{{text}}</div>
+    <div id="app" data-type="app">
+      <content-type :ccc.prop="type" data-type="content-type"></content-type>
     </div>
     <script src="./app.js"></script>
   </body>
